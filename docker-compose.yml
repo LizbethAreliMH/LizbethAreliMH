@@ -1,0 +1,9 @@
+docker-compose upversion: '3.8'
+services:
+
+  nodered:
+    container_name: mynodered
+    image: nodered/node-red:latest
+    restart: always
+    ports:
+      - 1881:1881
